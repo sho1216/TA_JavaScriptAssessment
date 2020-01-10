@@ -16,7 +16,7 @@ The All Star Code Teaching Assistant JavaScript Assessment consists of 3 tasks, 
 
 ### Notes
 - The tests folder contains test files in which your functions will be tested with. Feel free to look at the tests, but **DO NOT** edit them. These exact tests will be used to test your answers when you submit your work.
-- **Info on testing your work with the provided test specs is included at the <a href="#tests">end of the document.</a>**
+- **Info on testing your work with the provided test specs is included at the <a href="#tests">end of the document</a>.**
 
 ---
 
