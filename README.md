@@ -1,6 +1,6 @@
-# JavaScript Assessment - Teaching Assistant
+# JavaScript Assessment - Teaching Assistant 
 
-The All Star Code Teaching Assistant JavaScript Assessment consists of 3 tasks, to be completed and turned in to dante@allstarcode.org as a GitHub gist.
+The All Star Code Teaching Assistant JavaScript Assessment consists of 4 tasks, to be completed and turned in to dante@allstarcode.org as a GitHub gist.
 
 ## IT IS NOT NECESSARY PASS ALL TEST SPECS TO GET HIRED. JUST DO YOUR BEST! :smile:
 
@@ -88,63 +88,6 @@ The All Star Code Teaching Assistant JavaScript Assessment consists of 3 tasks, 
         pikachu.health = 12;
         pikachu.display();  // PIKACHU (ELECTRIC) 12/25
        ```
-
-   <br>
-
----
-
-## EXTRA CREDIT CHALLENGE
-*The extra credit challenge is optional, but highly recommended. Only attempt this if you've passed all the tests for Task #1 - #4.
-    <br>
-Please note that test cases for the extra credit challenge are not included in this repo.*
-
-### **Context**
-In Pokemon, as you may already know, a Pokemon trainer can encounter wild Pokemon by walking through wild grass. The chance of an encounter can be represented by the following equation:
-
-
-`chance = (val / 187.5) * 100`
-
-- *chance* : chance of encountering a wild Pokemon
-- *val* : numerical value based on the `.rarity` of a Pokemon
-
-Before proceeding, declare a new property for your `Pokemon` object - `.rarity` that holds a string. No data validation needed.
-
-| Rarity | Numerical Value *(val)* |
-|:------:|:---------------------:|
-|Very Common | 12|
-| Common | 8.5   |
-| Semi-rare | 6.75 |
-| Rare | 3.33 |
-| Very Rare | 1.25 |
-
-<br>
-
-## EC Task - checkGrass() Method
-- Implement a `checkGrass()` method for the `Pokemon` class which takes two arguments - a tile and an array of `Pokemon` objects in the given order: `checkGrass(tile, pokemonArr)`
-- Check the tile:
-   - If the tile input is not `'░'` (ground) or `'▓'` (grass), throw a TypeError with the message: `"Input is not a tile"`
-   -  If the tile input is `'░'` (ground), return `0` as there is no chance of encountering a Pokemon there.
-   - If the tile input is `'▓'` (grass), return an object that consists of `key: value` pairs derived from the Pokemon array where:
-       - Key: `.name` of each `Pokemon`
-       - Value: the calculated `chance` (`chance = (val / 187.5) * 100`) of encountering that `Pokemon` based on its `.rarity` rounded to the nearest integer.
-       - Example:
-            ```
-           {
-              pokemon_name1: chance1,
-              pokemon_name2: chance2
-           }
-           ```
-       - If the array of `Pokemon` objects is not an array, throw a TypeError with the message: `"Not an array"`.
-        - If any of the `Pokemon` in the array does not have a value for `.rarity`, throw a TypeError with the message: `"Missing rarity"`.
-        - If any of the `Pokemon` in the array has a rarity that is not defined in the table above (Very Common, Common, Semi-rare, Rare, Very Rare), throw a TypeError with the message: `"Invalid rarity"`.
-    - Example:
-        ```javascript
-        const charmander = new Pokemon("charmander", 12, 8, 30, "fire", "Rare");
-        const bulbasaur = new Pokemon("bulbasaur", 7, 9, 35, "grass/poison", "Common");
-        const pikachu = new Pokemon("pikachu", 9, 10, 25, "electric", "Very Rare");
-
-        console.log(charmander.checkGrass('▓', [bulbasaur, pikachu]));  // { bulbasaur: 5, pikachu: 1 }
-        ```
 
 <br>
 
