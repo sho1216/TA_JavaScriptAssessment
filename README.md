@@ -93,10 +93,10 @@ The All Star Code Teaching Assistant JavaScript Assessment consists of 3 tasks, 
 
 ---
 
-## EXTRA CREDIT CHALLENGES
-*The extra credit challenges are optional, but highly recommended. Only attempt this if you've passed all the tests for Task #1 - #4.
+## EXTRA CREDIT CHALLENGE
+*The extra credit challenge is optional, but highly recommended. Only attempt this if you've passed all the tests for Task #1 - #4.
     <br>
-Please note that test cases for the extra credit challenges are not included in this repo.*
+Please note that test cases for the extra credit challenge are not included in this repo.*
 
 ### **Context**
 In Pokemon, as you may already know, a Pokemon trainer can encounter wild Pokemon by walking through wild grass. The chance of an encounter can be represented by the following equation:
